@@ -7,3 +7,8 @@ Write a method called BinarySearch which takes in 2 parameters: a sorted array a
 ## Whiteboard Process:
 
 ![Binary Search](./image/Binary%20Search.png)
+
+## Approach & Efficiency
+
+Big O Time = O(log n) // Big O Space = O(1)
+The iterative approach to binary search comes with a logn time because the array is continually being divided in half after every comparison.
