@@ -5,3 +5,5 @@
 [Insert Array](./insertArray/README.md)
 
 [Binary Search](./BinarySearch/BinarySearch.md)
+
+[Linked lists](./LinkedList)

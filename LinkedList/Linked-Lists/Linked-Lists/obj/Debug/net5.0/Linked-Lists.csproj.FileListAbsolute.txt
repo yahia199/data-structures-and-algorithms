@@ -1,0 +1,16 @@
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.csproj.AssemblyReference.cache
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.AssemblyInfoInputs.cache
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.AssemblyInfo.cs
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.csproj.CoreCompileInputs.cache
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\bin\Debug\net5.0\Linked-Lists.exe
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\bin\Debug\net5.0\Linked-Lists.deps.json
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\bin\Debug\net5.0\Linked-Lists.runtimeconfig.json
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\bin\Debug\net5.0\Linked-Lists.runtimeconfig.dev.json
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\bin\Debug\net5.0\Linked-Lists.dll
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\bin\Debug\net5.0\ref\Linked-Lists.dll
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\bin\Debug\net5.0\Linked-Lists.pdb
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.dll
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\ref\Linked-Lists.dll
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.pdb
+C:\Users\D-C\Desktop\CodeChllenges\data-structures-and-algorithms\data-structures-and-algorithms\LinkedList\Linked-Lists\Linked-Lists\obj\Debug\net5.0\Linked-Lists.genruntimeconfig.cache
