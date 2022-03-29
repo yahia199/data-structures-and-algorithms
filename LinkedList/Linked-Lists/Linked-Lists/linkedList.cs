@@ -18,7 +18,7 @@ namespace LinkedLists
         }
 
         // To add in the last of the linked list
-        public void AddLast(int value)
+        public void Append(int value)
         {
             Node item = new Node(value);
 
@@ -88,5 +88,68 @@ namespace LinkedLists
             }
             return false;
         }
+        public void InsertBefore(int data, int x)
+        {
+            Node temp;
+
+            // if list is empty
+            if (Head == null)
+            {
+                Console.WriteLine("List is empty");
+                return;
+            }
+
+            // if x is the first node the new node will be inserted before the first node
+            if (x == Head.Data)
+            {
+                temp = new Node(data);
+                temp.Next = Head;
+                Head = temp;
+                return;
+
+            }
+            Node p = Head;
+            while (p.Next != null)
+            {
+                if (p.Next.Data == x)
+                    break;
+                p = p.Next;
+            }
+
+            if (p.Next == null)
+                Console.WriteLine(x + " not present in the list");
+            else
+            {
+                temp = new Node(data);
+                temp.Next = p.Next;
+                p.Next = temp;
+            }
+
+
+        }
+
+        public void InsertAfter(int data, int x)
+        {
+            Node p = Head;
+            while (p != null)
+            {
+                if (p.Data == x)
+                    break;
+                p = p.Next;
+            }
+
+            if (p == null)
+                Console.WriteLine(x + " not present  the list");
+            else
+            {
+                Node temp = new Node(data);
+                temp.Next = p.Next;
+                p.Next = temp;
+            }
+        }
+
+
+
+
     }
 }
