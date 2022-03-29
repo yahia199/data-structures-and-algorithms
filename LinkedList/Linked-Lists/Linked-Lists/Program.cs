@@ -8,12 +8,14 @@ namespace LinkedLists
         {
             Linked_Lists liste = new Linked_Lists();
 
-            liste.AddLast(10);
-            liste.AddLast(15);
-            liste.AddLast(20);
+            liste.Append(10);
+            liste.Append(15);
+            liste.Append(20);
             liste.AddFirst(1);
             liste.Search(7);
             liste.Search(10);
+            liste.InsertBefore(5, 15);
+            liste.InsertAfter(5, 15);
             liste.ToString();
 
         }
