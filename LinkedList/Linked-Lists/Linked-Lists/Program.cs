@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LinkedLists
 {
@@ -16,8 +17,12 @@ namespace LinkedLists
             liste.Search(10);
             liste.InsertBefore(5, 15);
             liste.InsertAfter(5, 15);
+           liste.FromEnd(4);
             liste.ToString();
+            
 
         }
+
+      
     }
 }

@@ -22,6 +22,8 @@ Big O for AddFirst is O(1) and space O(1)
  -
   Big O for inserAfter is O(n) and space O(1) 
   -
+  Big O for FromEnd  is O(n) and space O(1) 
+  -
 
   ---
 
@@ -32,6 +34,8 @@ Big O for AddFirst is O(1) and space O(1)
  - ![Insert Before](./image/insert%20before.png)
 
  - ![Insert After](./image/insert%20after.png)
+
+ - ![Kth](./image/kth.png)
  
 
 
@@ -48,3 +52,4 @@ search : To search for a specific value in linked lists.
 AddBefore : To add a new node with the given new value immediately before the first node that has the value specified.
 
 AddAfter : To add a new node with the given new value immediately after the first node that has the value specified
+

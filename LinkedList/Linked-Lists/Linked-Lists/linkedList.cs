@@ -8,8 +8,10 @@ namespace LinkedLists
 {
     public class Linked_Lists
     {
-       public Node Head;
-      public  Node Tail;
+        public Node Head;
+        public Node Tail;
+
+        public Node Current { get; private set; }
 
         public Linked_Lists()
         {
@@ -147,9 +149,52 @@ namespace LinkedLists
                 p.Next = temp;
             }
         }
+        public int FromEnd(int value)
+        {
+            Linked_Lists liste = new Linked_Lists();
+
+            if (value < 0)
+            {
+                Console.WriteLine ("Invalid k value");
+                return -1;
+            }
 
 
+            int counter = 0;
 
+            Node Current = Head;
+            while (Current.Next != null)
+            {
+                counter++;
+                Current = Current.Next;
+            }
+
+            if (value > counter)
+            {
+                Console.WriteLine("Out of range");
+                return -1;
+            }
+            else
+            {
+
+                Current = Head;
+
+                while (counter > value)
+                {
+                    Current = Current.Next;
+                    counter--;
+                }
+                Console.WriteLine(Current.Data);
+                return Current.Data;
+            }
+
+        }
 
     }
 }
+
+
+
+
+
+
