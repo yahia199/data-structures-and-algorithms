@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using LinkedLists;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 
 namespace Testlinkedlists
 {
@@ -50,7 +51,7 @@ namespace Testlinkedlists
             Assert.Equal(expected, actual);
         }
         [Theory]
-        [InlineData(new int[] { 10, 20, 30, 40, 50 }, 60)]
+        [InlineData(new int[] { 10, 20, 30, 40, 50 }, 60)] //Can successfully add a node to the end of the linked list
         public void canAddToTheEnd(int[] nums, int target)
         {
             Linked_Lists list = new Linked_Lists();
@@ -93,5 +94,85 @@ namespace Testlinkedlists
         }
 
 
+      [Fact]
+        public void FromEndTest()
+        {
+            Linked_Lists liste = new Linked_Lists();
+            liste.Append(5);
+            liste.Append(4);
+            liste.Append(3);
+            liste.Append(2);
+            liste.Append(1);
+            liste.FromEnd(4);
+
+            //Assert
+            Assert.Equal( 5, liste.FromEnd(4));
+        }
+        [Fact]
+        public void WhereKisgreaterthanthelengthofthelinkedlist()
+        {
+            Linked_Lists liste = new Linked_Lists();
+            liste.Append(5);
+            liste.Append(4);
+            liste.Append(3);
+            liste.Append(2);
+            liste.Append(1);
+            liste.FromEnd(10);
+
+            //Assert
+            Assert.Equal(-1, liste.FromEnd(10));
+        }
+        [Fact]
+        public void WhereKandthelengthofthelistarethesame()
+        {
+            Linked_Lists liste = new Linked_Lists();
+            liste.Append(5);
+            liste.Append(4);
+            liste.Append(3);
+            liste.Append(2);
+            liste.Append(1);
+            liste.FromEnd(4);
+
+            //Assert
+            Assert.Equal(5, liste.FromEnd(4));
+        }
+        [Fact]
+        public void WhereKisnotapositiveinteger()
+        {
+            Linked_Lists liste = new Linked_Lists();
+            liste.Append(5);
+            liste.Append(4);
+            liste.Append(3);
+            liste.Append(2);
+            liste.Append(1);
+            liste.FromEnd(-2);
+
+            //Assert
+            Assert.Equal(-1, liste.FromEnd(-2));
+        }
+        [Fact]
+        public void Wherethelinkedlistisofasize1()
+        {
+            Linked_Lists liste = new Linked_Lists();
+            liste.Append(5);
+            liste.FromEnd(0);
+
+            //Assert
+            Assert.Equal(5, liste.FromEnd(0));
+        }
+        [Fact]
+        public void whereKisnotattheend()
+        {
+            Linked_Lists liste = new Linked_Lists();
+            liste.Append(5);
+            liste.Append(4);
+            liste.Append(3);
+            liste.Append(2);
+            liste.Append(1);
+            liste.FromEnd(2);
+
+            //Assert
+            Assert.Equal(3, liste.FromEnd(2));
+        }
     }
 }

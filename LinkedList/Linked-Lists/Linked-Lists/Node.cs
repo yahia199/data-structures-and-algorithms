@@ -23,6 +23,8 @@ namespace LinkedLists
             set { next = value; }
         }
 
+        public object Value { get; internal set; }
+
         public Node(int value)
         {
             this.data = value;
