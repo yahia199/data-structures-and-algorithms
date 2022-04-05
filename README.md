@@ -8,4 +8,4 @@
 
 [Linked lists](./LinkedList)
 
-[Ziplist](./LinkedList/Ziplist.md)
+[Ziplist](./LinkedList/Ziplist.md)nn
