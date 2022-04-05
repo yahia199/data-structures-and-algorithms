@@ -37,22 +37,20 @@ namespace LinkedLists
         }
 
         // To display linked list
-        public void ToString()
+        public string Tostring()
         {
-            Node start = Head;
-            if (start == null)
+            string format = "";
+            Node current = Head;
+            while (current != null)
             {
-                Console.WriteLine("Your llist is empty");
+                format += $"[ {current.Data} ] -> ";
+                current = current.Next;
             }
-            else
-            {
-                while (start != null)
-                {
-                    Console.Write("[" + start.Data + "] -> ");
-                    start = start.Next;
-                }
-                Console.WriteLine("null");
-            }
+
+            format += "NULL";
+            return format;
+           
+
         }
 
         public void AddFirst(int value)
@@ -155,7 +153,7 @@ namespace LinkedLists
 
             if (value < 0)
             {
-                Console.WriteLine ("Invalid k value");
+                Console.WriteLine("Invalid k value");
                 return -1;
             }
 
@@ -189,9 +187,36 @@ namespace LinkedLists
             }
 
         }
+        public Linked_Lists ZipLists(Linked_Lists list1, Linked_Lists list2)
+        {
+            Linked_Lists MyList = new Linked_Lists();
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+            int value;
+            while (current1 != null || current2 != null)
+            {
+                if (current1 != null)
+                {
+                    value = current1.Data;
+                    Append(value);
+                    current1 = current1.Next;
+                }
+                if (current2 != null)
+                {
+                    value = current2.Data;
+                    Append(value);
+                    current2 = current2.Next;
+                }
 
+            }
+            return MyList;
+
+        }
     }
 }
+
+
+    
 
 
 
