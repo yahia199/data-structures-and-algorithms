@@ -7,3 +7,5 @@
 [Binary Search](./BinarySearch/BinarySearch.md)
 
 [Linked lists](./LinkedList)
+
+[Ziplist](./LinkedList/Ziplist.md)
