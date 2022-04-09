@@ -212,6 +212,23 @@ namespace LinkedLists
             return MyList;
 
         }
+        public Linked_Lists ReverseList(Linked_Lists liste)
+        {
+
+            Node prev = null, current = Head, next = null;
+            while (current != null)
+            {
+                next = current.Next;
+                current.Next = prev;
+                prev = current;
+                current = next;
+            }
+            Head = prev;
+        
+        liste.Head = Tail;
+
+             return liste;
+        }
     }
 }
 
