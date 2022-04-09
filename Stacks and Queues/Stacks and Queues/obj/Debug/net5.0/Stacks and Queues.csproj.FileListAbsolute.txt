@@ -1,0 +1,16 @@
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\bin\Debug\net5.0\Stacks and Queues.exe
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\bin\Debug\net5.0\Stacks and Queues.deps.json
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\bin\Debug\net5.0\Stacks and Queues.runtimeconfig.json
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\bin\Debug\net5.0\Stacks and Queues.runtimeconfig.dev.json
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\bin\Debug\net5.0\Stacks and Queues.dll
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\bin\Debug\net5.0\ref\Stacks and Queues.dll
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\bin\Debug\net5.0\Stacks and Queues.pdb
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.csproj.AssemblyReference.cache
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.AssemblyInfoInputs.cache
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.AssemblyInfo.cs
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.csproj.CoreCompileInputs.cache
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.dll
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\ref\Stacks and Queues.dll
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.pdb
+C:\Users\D-C\stack\Stacks and Queues\Stacks and Queues\obj\Debug\net5.0\Stacks and Queues.genruntimeconfig.cache

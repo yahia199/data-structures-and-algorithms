@@ -41,6 +41,9 @@ namespace LinkedLists
             Console.WriteLine(liste.Tostring());
 
 
+            liste.ReverseList(list2);
+            Console.WriteLine(list2.Tostring());
+
 
 
 
