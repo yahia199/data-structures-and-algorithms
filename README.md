@@ -9,3 +9,5 @@
 [Linked lists](./LinkedList)
 
 [Ziplist](./LinkedList/Ziplist.md)
+
+[Stack and Queue](./Stacks%20and%20Queues/README.md)
