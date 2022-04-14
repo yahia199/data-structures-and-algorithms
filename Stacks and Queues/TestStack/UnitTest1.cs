@@ -165,6 +165,21 @@ namespace TestStack
             Assert.Equal(-1, queue.Peek());
 
         }
+        [Fact]
+        public void DequeueStackTest() // Test PesudoQueue 
+        {
+
+            PseudoQueue Stack1 = new PseudoQueue();
+
+
+
+
+            Stack1.EnqueueStack(5);
+            Stack1.EnqueueStack(15);
+            Stack1.EnqueueStack(20);
+
+            Assert.Equal(5, Stack1.DequeueStack());
+        }
     }
 }
 
