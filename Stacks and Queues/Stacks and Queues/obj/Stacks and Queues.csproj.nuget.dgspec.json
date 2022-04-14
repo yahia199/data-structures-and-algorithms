@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\D-C\\stack\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj": {}
+    "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj": {}
   },
   "projects": {
-    "C:\\Users\\D-C\\stack\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj": {
+    "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\D-C\\stack\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj",
+        "projectUniqueName": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj",
         "projectName": "Stacks and Queues",
-        "projectPath": "C:\\Users\\D-C\\stack\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj",
+        "projectPath": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj",
         "packagesPath": "C:\\Users\\D-C\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\D-C\\stack\\Stacks and Queues\\Stacks and Queues\\obj\\",
+        "outputPath": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\Stacks and Queues\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\D-C\\AppData\\Roaming\\NuGet\\NuGet.Config",

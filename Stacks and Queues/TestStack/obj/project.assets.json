@@ -5938,11 +5938,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\D-C\\stack\\Stacks and Queues\\TestStack\\TestStack.csproj",
+      "projectUniqueName": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\TestStack\\TestStack.csproj",
       "projectName": "TestStack",
-      "projectPath": "C:\\Users\\D-C\\stack\\Stacks and Queues\\TestStack\\TestStack.csproj",
+      "projectPath": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\TestStack\\TestStack.csproj",
       "packagesPath": "C:\\Users\\D-C\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\D-C\\stack\\Stacks and Queues\\TestStack\\obj\\",
+      "outputPath": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\TestStack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\D-C\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5959,8 +5959,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\D-C\\stack\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj": {
-              "projectPath": "C:\\Users\\D-C\\stack\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj"
+            "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj": {
+              "projectPath": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Stacks and Queues\\Stacks and Queues\\Stacks and Queues.csproj"
             }
           }
         }
