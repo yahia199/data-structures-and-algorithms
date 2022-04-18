@@ -166,7 +166,7 @@ namespace TestStack
 
         }
         [Fact]
-        public void DequeueStackTest() // Test PesudoQueue 
+        public void DequeueTestPesudoQueue() // Test PesudoQueue 
         {
 
             PseudoQueue Stack1 = new PseudoQueue();
@@ -180,6 +180,7 @@ namespace TestStack
 
             Assert.Equal(5, Stack1.DequeueStack());
         }
+
     }
 }
 
@@ -188,4 +189,3 @@ namespace TestStack
 
 
 
-//Calling dequeue or peek on empty queue raises exception

@@ -51,16 +51,18 @@ namespace Stacks_and_Queues
             //Console.Beep();
 
 
-            PseudoQueue Stack1 = new PseudoQueue();
+            //PseudoQueue Stack1 = new PseudoQueue();
 
 
 
 
-            Stack1.EnqueueStack(5);
-            Stack1.EnqueueStack(15);
-            Stack1.EnqueueStack(20);
+            //Stack1.EnqueueStack(5);
+            //Stack1.EnqueueStack(15);
+            //Stack1.EnqueueStack(20);
 
-            Console.WriteLine(Stack1.DequeueStack());
+            //Console.WriteLine(Stack1.DequeueStack());
+
+           
 
 
         }
