@@ -11,7 +11,7 @@ Big O for DequeueStack O(1)
 
 ## Whiteboard Process
 
-![](./TwoStacks.png)
+![](./Queue.png)
 
 ## Soultion
 Clone this repository to your local machine.
