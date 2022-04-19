@@ -180,6 +180,37 @@ namespace TestStack
 
             Assert.Equal(5, Stack1.DequeueStack());
         }
+        [Fact]
+        public void FifoEnqueForShelterExpectedOutcome()
+        {
+            Dog dogOne = new Dog();
+            Cat catOne = new Cat();
+            Dog dogTwo = new Dog();
+
+            AnimalShelter shelter = new AnimalShelter();
+
+            shelter.Enqueue(dogOne);
+            shelter.Enqueue(catOne);
+            shelter.Enqueue(dogTwo);
+
+            Assert.Equal(dogOne, shelter.stackOne.Peek());
+        }
+        [Fact]
+        public void FifoForDqequeShelterExpectedOutcome()
+        {
+            Dog dogOne = new Dog();
+            Cat catOne = new Cat();
+            Dog dogTwo = new Dog();
+
+            AnimalShelter shelter = new AnimalShelter();
+
+            shelter.Enqueue(dogOne);
+            shelter.Enqueue(catOne);
+            shelter.Enqueue(dogTwo);
+
+            Assert.Equal(catOne, shelter.Dequeue("cat"));
+        }
+
 
     }
 }
