@@ -5,7 +5,7 @@ First-in, First out Animal Shelter
 
 ## Whiteboard Process
 
-![](./Animal.png)
+![](./Animals.png)
 
 ---
 
@@ -15,7 +15,7 @@ Big O for Enqueue O(n)
 
 Big O for Dequeue O(n)
 
----
+---   
 
 ## Solution
 
