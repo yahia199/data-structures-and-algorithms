@@ -181,7 +181,7 @@ namespace TestStack
             Assert.Equal(5, Stack1.DequeueStack());
         }
         [Fact]
-        public void FifoEnqueForShelterExpectedOutcome()
+        public void AnimalEnqueue()
         {
             Dog dogOne = new Dog();
             Cat catOne = new Cat();
@@ -196,7 +196,7 @@ namespace TestStack
             Assert.Equal(dogOne, shelter.stackOne.Peek());
         }
         [Fact]
-        public void FifoForDqequeShelterExpectedOutcome()
+        public void AnimalDequeue()
         {
             Dog dogOne = new Dog();
             Cat catOne = new Cat();
@@ -210,9 +210,16 @@ namespace TestStack
 
             Assert.Equal(catOne, shelter.Dequeue("cat"));
         }
-
-
+        [Fact]
+        public void ExpectedOutCome()
+        {
+            bracket brackets = new bracket();
+            Assert.True(brackets.BracketValidation("{}(jhjkbkjk)"));
+        }
     }
+
+
+    
 }
 
 
