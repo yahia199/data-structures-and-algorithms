@@ -15,3 +15,5 @@
 [Pesudo Queue](./Stacks%20and%20Queues/PesudoQueue.md)
 
 [Animal shelter](./Stacks%20and%20Queues/AnimalShelter.md)
+
+[Brackets](./Stacks%20and%20Queues/Brackets.md)
