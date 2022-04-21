@@ -7,11 +7,11 @@ Make Queue by use Two stacks
 ## Approach & Efficiency
 
 Big O for EnqueueStack O(n)
-Big O for DequeueStack O(1)
+Big O for DequeueStack O(n)
 
 ## Whiteboard Process
 
-![](./Queue.png)
+![](./Pesudo.png)
 
 ## Soultion
 Clone this repository to your local machine.

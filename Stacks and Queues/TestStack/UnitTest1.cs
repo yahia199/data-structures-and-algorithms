@@ -58,8 +58,8 @@ namespace TestStack
             stack.Push(1);
             stack.Push(2);
             stack.Push(3);
-            
-            Assert.Equal(3 , stack.Peek());
+
+            Assert.Equal(3, stack.Peek());
 
         }
         [Fact]
@@ -88,7 +88,7 @@ namespace TestStack
             Queue queue = new Queue();
             queue.Enqeue(1);
             Assert.True(queue.IsEmpty == false);
-         
+
         }
         [Fact]
         public void TestEnqueueMultiple() //Can successfully enqueue multiple values into a queue
@@ -151,7 +151,7 @@ namespace TestStack
         public void InstantiateAnEmptyQueue() //Can successfully instantiate an empty queue
         {
             Queue queue = new Queue();
-          
+
 
             Assert.Equal("Queue is empty", queue.Print());
 
@@ -216,10 +216,24 @@ namespace TestStack
             bracket brackets = new bracket();
             Assert.True(brackets.BracketValidation("{}(jhjkbkjk)"));
         }
+        [Fact]
+        public void EnqueueTestPesudoQueue() // Test PesudoQueue 
+        {
+
+            PseudoQueue Stack1 = new PseudoQueue();
+
+
+
+
+            Stack1.EnqueueStack(5);
+
+
+            Assert.Equal(5, Stack1.DequeueStack());
+        }
+
+
+
     }
-
-
-    
 }
 
 
