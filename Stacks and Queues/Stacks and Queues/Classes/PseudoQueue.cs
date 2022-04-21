@@ -32,9 +32,26 @@ namespace Stacks_and_Queues.Classes
         }
         public int DequeueStack()
         {
-            int x;
-            x = Stack1.Pop();
+           
+            
+            
+                while (Stack1.Top != null)
+                {
+                    Stack2.Push(Stack1.Pop());
+                }
+            while (Stack2.Top != null)
+            {
+                Stack1.Push(Stack2.Pop());
+            }
+            int x=  Stack1.Pop();
+
             return x;
+          
+
+
+
+
+
 
         }
     }
