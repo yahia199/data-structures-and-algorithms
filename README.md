@@ -17,3 +17,5 @@
 [Animal shelter](./Stacks%20and%20Queues/AnimalShelter.md)
 
 [Brackets](./Stacks%20and%20Queues/Brackets.md)
+
+[Trees](./Trees/Trees/Trees.md)
