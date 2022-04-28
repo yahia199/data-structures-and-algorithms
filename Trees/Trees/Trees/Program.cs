@@ -54,6 +54,8 @@ namespace Trees
             obj.add(9);
             Console.WriteLine(obj.Contains(9));
 
+            Console.WriteLine(obj.Getmax());
+
 
 
         }

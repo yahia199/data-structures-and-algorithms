@@ -19,3 +19,5 @@
 [Brackets](./Stacks%20and%20Queues/Brackets.md)
 
 [Trees](./Trees/Trees/Trees.md)
+
+[Trees-Max](./Trees/Trees/treemax.md)
