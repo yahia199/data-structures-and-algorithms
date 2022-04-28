@@ -97,7 +97,7 @@ namespace TreeTest
                 Assert.Equal(new List<int> { 5, 2, 4, 3, 1 }, binarytree.Post_Order(binarytree.Head));
             }
             [Fact]
-            public void ContainMethod()
+            public void ContainMethodTest()
             {
                
                 Binary_Search_Tree obj = new Binary_Search_Tree();
@@ -113,6 +113,24 @@ namespace TreeTest
                 Assert.True(obj.Contains(9));
 
             }
+            [Fact]
+            public void GetMaxTest()
+            {
+
+                Binary_Search_Tree obj = new Binary_Search_Tree();
+                obj.add(8);
+                obj.add(3);
+                obj.add(10);
+                obj.add(2);
+                obj.add(6);
+                obj.add(14);
+                obj.add(9);
+                obj.add(9);
+
+                Assert.Equal(14, obj.Getmax());
+
+            }
+
 
         }
     }

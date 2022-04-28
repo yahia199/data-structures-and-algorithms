@@ -70,6 +70,16 @@ namespace Trees
             }
             return false;
         }
+        public int Getmax()
+        {
+            Node current = head;
+            while (current.Right != null)
+            {
+                current = current.Right;
+            }
+            return current.value;
+        }
+
 
 
     }
