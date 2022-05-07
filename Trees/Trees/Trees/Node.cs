@@ -8,11 +8,11 @@ namespace Trees
 {
   public  class Node
     {
-        public int value;
+        public Object value;
         public Node Right;
         public Node Left;
 
-        public Node (int x)
+        public Node (object x)
         {
             value = x;
         }

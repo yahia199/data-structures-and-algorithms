@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Trees
 {
-   public class Binarytree
+    public class Binarytree
     {
         public Node Head { get; set; }
-        public List<int> myList = new List<int>();
+        public List<object> myList = new List<object>();
 
         public Binarytree(Node head)
         {
             Head = head;
         }
 
-        public List<int> Pre_Order(Node node) 
+        public List<object> Pre_Order(Node node)
         {
-            int value = node.value;
+            object value = node.value;
             myList.Add(value);
 
             if (node.Left != null)
@@ -32,7 +32,7 @@ namespace Trees
 
             return myList;
         }
-        public List<int> In_Order(Node node)
+        public List<object> In_Order(Node node)
         {
             if (node.Left != null)
             {
@@ -48,7 +48,7 @@ namespace Trees
 
             return myList;
         }
-        public List<int> Post_Order(Node node)
+        public List<object> Post_Order(Node node)
         {
             if (node.Left != null)
             {
@@ -63,6 +63,34 @@ namespace Trees
             myList.Add(node.value);
 
             return myList;
+        }
+        public object[] FizzBuzzTree(Node node)
+        {
+            if ((int)(node.value) % 15 == 0)
+            {
+                node.value = "FizzBuzz";
+            }
+            else if ((int)(node.value) % 3 == 0)
+            {
+                node.value = "Fizz";
+
+            }
+            else if ((int)(node.value) % 5 == 0)
+            {
+                node.value = "Buzz";
+            }
+            myList.Add(node.value);
+
+
+            if (node.Left != null)
+            {
+                FizzBuzzTree(node.Left);
+            }
+            if (node.Right != null)
+            {
+                FizzBuzzTree(node.Right);
+            }
+            return myList.ToArray();
         }
 
 
