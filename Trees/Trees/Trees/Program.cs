@@ -22,6 +22,7 @@ namespace Trees
             binarytree.Head.Right = node3;
             binarytree.Head.Right.Left = node4;
 
+
             Console.WriteLine("Pre order");
             var Pre_Order = binarytree.Pre_Order(binarytree.Head);
             foreach (var item in Pre_Order)
@@ -42,7 +43,16 @@ namespace Trees
             {
                 Console.WriteLine(item);
             }
+            binarytree.myList.Clear();
 
+
+            Console.WriteLine("FizzBazz");
+
+            var Fizz = binarytree.FizzBuzzTree(binarytree.Head);
+            foreach (var item in Fizz)
+            {
+                Console.WriteLine(item);
+            }
             Binary_Search_Tree obj = new Binary_Search_Tree();
             obj.add(8);
             obj.add(3);
@@ -59,5 +69,6 @@ namespace Trees
 
 
         }
+      
     }
 }

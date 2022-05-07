@@ -11,7 +11,7 @@ namespace Trees
         public Node head;
         public int count;
 
-        public void add(int value)
+        public void add(object value)
         {
             if(head == null)
             {
@@ -23,9 +23,9 @@ namespace Trees
             }
             count++;
         }
-        private void AddTo(Node node, int value)
+        private void AddTo(Node node, object value)
         {
-            if (value < node.value)
+            if ((int)value < (int)node.value)
             {
                 if (node.Left == null)
                 {
@@ -50,16 +50,16 @@ namespace Trees
 
         }
         
-        public bool Contains(int value)
+        public bool Contains(object value)
         {
             Node current = head;
             while (current != null)
             {
-                if (value > current.value)
+                if ((int)value > (int)current.value)
                 {
                     current = current.Right;
                 }
-                else if (value < current.value)
+                else if ((int)value < (int)current.value)
                 {
                     current = current.Left;
                 }
@@ -70,7 +70,7 @@ namespace Trees
             }
             return false;
         }
-        public int Getmax()
+        public object Getmax()
         {
             Node current = head;
             while (current.Right != null)
@@ -79,7 +79,7 @@ namespace Trees
             }
             return current.value;
         }
-
+      
 
 
     }

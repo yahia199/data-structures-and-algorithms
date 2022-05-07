@@ -21,3 +21,5 @@
 [Trees](./Trees/Trees/Trees.md)
 
 [Trees-Max](./Trees/Trees/treemax.md)
+
+[Fizz-Buzz](./Trees/Trees/FizzBuzz.md)

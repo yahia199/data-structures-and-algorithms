@@ -58,7 +58,7 @@ namespace TreeTest
                 binarytree.Head.Right = node3;
                 binarytree.Head.Right.Left = node4;
 
-                Assert.Equal(new List<int> { 1, 2, 5,3,4 }, binarytree.Pre_Order(binarytree.Head));
+                Assert.Equal(new List<object> { 1, 2, 5,3,4 }, binarytree.Pre_Order(binarytree.Head));
             }
             [Fact]
             public void InorderTraversalTest()
@@ -76,7 +76,7 @@ namespace TreeTest
                 binarytree.Head.Right = node3;
                 binarytree.Head.Right.Left = node4;
 
-                Assert.Equal(new List<int> { 2, 5, 1, 4, 3 }, binarytree.In_Order(binarytree.Head));
+                Assert.Equal(new List<object> { 2, 5, 1, 4, 3 }, binarytree.In_Order(binarytree.Head));
             }
             [Fact]
             public void PostorderTraversalTest()
@@ -94,7 +94,7 @@ namespace TreeTest
                 binarytree.Head.Right = node3;
                 binarytree.Head.Right.Left = node4;
 
-                Assert.Equal(new List<int> { 5, 2, 4, 3, 1 }, binarytree.Post_Order(binarytree.Head));
+                Assert.Equal(new List<object> { 5, 2, 4, 3, 1 }, binarytree.Post_Order(binarytree.Head));
             }
             [Fact]
             public void ContainMethodTest()
@@ -129,6 +129,24 @@ namespace TreeTest
 
                 Assert.Equal(14, obj.Getmax());
 
+            }
+            [Fact]
+            public void FizzBuzzTreeTest()
+            {
+                Node node1 = new Node(1);
+                Node node2 = new Node(2);
+                Node node3 = new Node(3);
+                Node node4 = new Node(4);
+                Node node5 = new Node(5);
+
+                Binarytree binarytree = new Binarytree(node1);
+                binarytree.Head = node1;
+                binarytree.Head.Left = node2;
+                binarytree.Head.Left.Right = node5;
+                binarytree.Head.Right = node3;
+                binarytree.Head.Right.Left = node4;
+
+                Assert.Equal(new List<object> { 1, 2, "Buzz", "Fizz", 4 }, binarytree.FizzBuzzTree(binarytree.Head));
             }
 
 
