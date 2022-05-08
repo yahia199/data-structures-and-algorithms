@@ -53,18 +53,18 @@ namespace Trees
             {
                 Console.WriteLine(item);
             }
-            Binary_Search_Tree obj = new Binary_Search_Tree();
-            obj.add(8);
-            obj.add(3);
-            obj.add(10);
-            obj.add(2);
-            obj.add(6);
-            obj.add(14);
-            obj.add(9);
-            obj.add(9);
-            Console.WriteLine(obj.Contains(9));
+            //Binary_Search_Tree obj = new Binary_Search_Tree();
+            //obj.add(8);
+            //obj.add(3);
+            //obj.add(10);
+            //obj.add(2);
+            //obj.add(6);
+            //obj.add(14);
+            //obj.add(9);
+            //obj.add(9);
+            //Console.WriteLine(obj.Contains(9));
 
-            Console.WriteLine(obj.Getmax());
+            //Console.WriteLine(obj.Getmax());
 
 
 
