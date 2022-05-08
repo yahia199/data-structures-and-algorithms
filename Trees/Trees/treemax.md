@@ -4,9 +4,9 @@ Find the Maximum Value in a Binary Tree
 
 ## Whiteboard Process
 
-![](./Tree%20max.png)
+![](./Max%20(2).png)
 
-## Approach & Efficiency
+## Approac & Efficiency
 
 Big O for GetMax is O(n)
 

@@ -93,6 +93,20 @@ namespace Trees
             return myList.ToArray();
         }
 
+        public  object FindMaximumValue(Binarytree tree)
+        {
+            List<object> listOfNodes = tree.Pre_Order(tree.Head);
+            object temp = tree.Head.value;
+            foreach (var value in listOfNodes)
+            {
+                if ((int)temp < (int)value)
+                {
+                    temp = value;
+                }
+            }
+            return temp;
+        }
+
 
 
     }
