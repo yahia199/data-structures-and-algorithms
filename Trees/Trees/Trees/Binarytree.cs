@@ -64,7 +64,7 @@ namespace Trees
 
             return myList;
         }
-        public object[] FizzBuzzTree(Node node)
+        public List<object> FizzBuzzTree(Node node)
         {
             if ((int)(node.value) % 15 == 0)
             {
@@ -90,7 +90,7 @@ namespace Trees
             {
                 FizzBuzzTree(node.Right);
             }
-            return myList.ToArray();
+            return myList;
         }
 
         public  object FindMaximumValue(Binarytree tree)
