@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -106,8 +107,29 @@ namespace Trees
             }
             return temp;
         }
+       
+        public List<object> BreadthFirstMethod(Binarytree Tree)
+        {
+           
+            Node node = Tree.Head;
+            Queue<Node> MyQueue = new Queue<Node>();
+            List<object> MyList = new List<object>();
+            MyQueue.Enqueue(node);
+            while (MyQueue.Count > 0)
+            {
+                node = MyQueue.Dequeue();
+                MyList.Add(node.value);
 
-
-
+                if (node.Left != null)
+                {
+                    MyQueue.Enqueue(node.Left);
+                }
+                if (node.Right != null)
+                {
+                    MyQueue.Enqueue(node.Right);
+                }
+            }
+            return MyList;
+        }
     }
-}
+    }
