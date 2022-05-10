@@ -94,10 +94,10 @@ namespace Trees
             return myList;
         }
 
-        public  object FindMaximumValue(Binarytree tree)
+        public  object FindMaximumValue()
         {
-            List<object> listOfNodes = tree.Pre_Order(tree.Head);
-            object temp = tree.Head.value;
+            List<object> listOfNodes = Pre_Order(Head);
+            object temp = Head.value;
             foreach (var value in listOfNodes)
             {
                 if ((int)temp < (int)value)
@@ -108,7 +108,7 @@ namespace Trees
             return temp;
         }
        
-        public List<object> BreadthFirstMethod(Binarytree Tree)
+        public List<object> BreadthFirst(Binarytree Tree)
         {
            
             Node node = Tree.Head;
