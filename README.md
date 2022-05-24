@@ -25,3 +25,5 @@
 [Fizz-Buzz](./Trees/Trees/FizzBuzz.md)
 
 [Breathfirst](./Trees/tree-breadth-first.md)
+
+[Insertion Sort](./Insertion%20Sort/Insertion%20Sort/BLOG.md)
