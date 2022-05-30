@@ -27,3 +27,5 @@
 [Breathfirst](./Trees/tree-breadth-first.md)
 
 [Insertion Sort](./Insertion%20Sort/Insertion%20Sort/BLOG.md)
+
+[Quick Sort](./Quick%20Sort/QuickSort.md)
