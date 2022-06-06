@@ -7,6 +7,9 @@ namespace Quick_Sort
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            int[] arr = { 8, 4, 23, 42, 16, 15 };
+            QuickSort(arr, 0, arr.Length - 1);
+            Print(arr);
         }
         public static int[] QuickSort(int[] arr, int left, int right)
         {
@@ -45,6 +48,17 @@ namespace Quick_Sort
             int temp = arr[i];
             arr[i] = arr[low];
             arr[low] = temp;
+        }
+        static void Print(int []arr)
+        {
+            Console.Write('[');
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+            Console.WriteLine(']');
+
         }
     }
 }
