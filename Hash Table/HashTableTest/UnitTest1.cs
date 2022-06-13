@@ -1,6 +1,7 @@
 using Hash_Table.Classes;
 using System;
 using Xunit;
+using Hash_Table;
 
 namespace HashTableTest
 {
@@ -68,6 +69,29 @@ namespace HashTableTest
             testHashtable.Add("Test", "ValueOne");
 
             Assert.InRange(testHashtable.Hash("Test"), 0, 1024);
+        }
+        [Fact]
+        public void ReturnTheFirstWordToOccurMoreThanOnceTestOne()
+        {
+            string testPhrase = "Once upon a time, there was a brave princess who...";
+
+            Assert.Equal("a", Program.RepeatedWordfunctin(testPhrase));
+        }
+
+        [Fact]
+        public void ReturnTheFirstWordToOccurMoreThanOnceTestTwo()
+        {
+            string testPhrase = "Hello, World! Hello, World!";
+
+            Assert.Equal("hello", Program.RepeatedWordfunctin(testPhrase));
+        }
+
+        [Fact]
+        public void ReturnTheFirstWordToOccurMoreThanOnceTestThree()
+        {
+            string testPhrase = "Hello, World! World! World!";
+
+            Assert.NotEqual("hello", Program.RepeatedWordfunctin(testPhrase));
         }
     }
 }
