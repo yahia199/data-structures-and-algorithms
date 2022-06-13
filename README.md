@@ -29,3 +29,5 @@
 [Insertion Sort](./Insertion%20Sort/Insertion%20Sort/BLOG.md)
 
 [Quick Sort](./Quick%20Sort/QuickSort.md)
+
+[Repeated Word](./Hash%20Table/repeated%20word.md)
