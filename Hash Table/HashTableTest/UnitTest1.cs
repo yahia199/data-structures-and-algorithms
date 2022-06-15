@@ -2,6 +2,7 @@ using Hash_Table.Classes;
 using System;
 using Xunit;
 using Hash_Table;
+using System.Collections.Generic;
 
 namespace HashTableTest
 {
@@ -24,7 +25,7 @@ namespace HashTableTest
 
             testHashtable.Add("Test", "Value");
 
-            Assert.Equal("Value", testHashtable.Get("Test").Value);
+            Assert.Equal("Value", testHashtable.Get("Test"));
         }
 
         [Fact]
@@ -57,8 +58,8 @@ namespace HashTableTest
             testHashtable.Add("eTst", "ValueTwo");
 
             Assert.Equal(testHashtable.Hash("eTst"), testHashtable.Hash("Test"));
-            Assert.Equal("ValueOne", testHashtable.Get("Test").Value);
-            Assert.Equal("ValueTwo", testHashtable.Get("eTst").Value);
+            Assert.Equal("ValueOne", testHashtable.Get("Test"));
+            Assert.Equal("ValueTwo", testHashtable.Get("eTst"));
         }
 
         [Fact]
@@ -92,6 +93,71 @@ namespace HashTableTest
             string testPhrase = "Hello, World! World! World!";
 
             Assert.NotEqual("hello", Program.RepeatedWordfunctin(testPhrase));
+        }
+        [Fact]
+        public void TestingWithNoCollisions()
+        {
+            HashTable left = new HashTable();
+            left.Add("Bob", "First");
+            left.Add("Frank", "First");
+
+            HashTable right = new HashTable();
+            right.Add("Bob", "Second");
+            right.Add("Jim", "Second");
+
+            List<string> expected = new List<string>();
+            expected.Add("Frank, First, NULL");
+            expected.Add("Bob, First, Second");
+
+            List<string> actual = Program.LeftJoin(left, right);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestingWithCollisions()
+        {
+            HashTable left = new HashTable();
+            left.Add("Bob", "First");
+            left.Add("Frank", "First");
+
+            HashTable right = new HashTable();
+            right.Add("Bob", "Second");
+            right.Add("Jim", "Second");
+
+            List<string> expected = new List<string>();
+            expected.Add("Frank, First, NULL");
+            expected.Add("Bob, First, Second");
+
+            List<string> actual = Program.LeftJoin(left, right);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestingWithAdditionalData()
+        {
+            HashTable left = new HashTable();
+            left.Add("Bob", "First");
+            left.Add("Frank", "First");
+            left.Add("JimBob", "Crab Cakes");
+            left.Add("Wu", "Tang");
+
+            HashTable right = new HashTable();
+            right.Add("Bob", "Second");
+            right.Add("Jim", "Second");
+            right.Add("JimBob", "Are Tasty");
+            right.Add("Wu", "Clan");
+
+            List<string> expected = new List<string>();
+            expected.Add("Frank, First, NULL");
+            expected.Add("Bob, First, Second");
+            expected.Add("Wu, Tang, Clan");
+            expected.Add("JimBob, Crab Cakes, Are Tasty");
+
+            List<string> actual = Program.LeftJoin(left, right);
+
+            Assert.Equal(expected, actual);
         }
     }
 }
