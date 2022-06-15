@@ -9,7 +9,7 @@ namespace Hash_Table.Classes
    public class HashTable
     {
         private static int tableSize = 1014;
-        private Node[] Table { get; set; }
+        public Node[] Table { get; set; }
 
         public HashTable()
         {
@@ -34,7 +34,7 @@ namespace Hash_Table.Classes
                 current.Next = new Node(key, value);
             }
         }
-        public Node Get(string key)
+        public string Get(string key)
         {
             int index = Hash(key);
             Node current = Table[index];
@@ -43,7 +43,7 @@ namespace Hash_Table.Classes
             {
                 if (current.Key == key)
                 {
-                    return current;
+                    return current.Value;
                 }
                 current = current.Next;
             }
