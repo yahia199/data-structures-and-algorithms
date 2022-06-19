@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Hash Table\\Hash Table\\Hash Table.csproj",
+      "projectUniqueName": "C:\\Users\\D-C\\Desktop\\Data\\data-structures-and-algorithms\\Hash Table\\Hash Table\\Hash Table.csproj",
       "projectName": "Hash Table",
-      "projectPath": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Hash Table\\Hash Table\\Hash Table.csproj",
+      "projectPath": "C:\\Users\\D-C\\Desktop\\Data\\data-structures-and-algorithms\\Hash Table\\Hash Table\\Hash Table.csproj",
       "packagesPath": "C:\\Users\\D-C\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\D-C\\Desktop\\CodeChllenges\\data-structures-and-algorithms\\data-structures-and-algorithms\\Hash Table\\Hash Table\\obj\\",
+      "outputPath": "C:\\Users\\D-C\\Desktop\\Data\\data-structures-and-algorithms\\Hash Table\\Hash Table\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\D-C\\AppData\\Roaming\\NuGet\\NuGet.Config",
