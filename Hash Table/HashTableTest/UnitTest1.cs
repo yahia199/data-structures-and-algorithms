@@ -159,5 +159,96 @@ namespace HashTableTest
 
             Assert.Equal(expected, actual);
         }
+        [Fact]
+        public void CanDetect5And3AsIntersections()
+        {
+
+            Node n1 = new Node("Yahia", "1000JD");
+            Node n2 = new Node("Ahmad", "15000JD");
+            Node n3 = new Node("Njood", "2000JD");
+            Node n4 = new Node("Mahmoud", "5000JD");
+            Node n5 = new Node("Omar", "444000JD");
+
+            Node n6 = new Node("Yahia", "2000JD");
+            Node n7 = new Node("Ahmad", "15000JD");
+            Node n8 = new Node("Njood", "500JD");
+
+            BinaryTree tree1 = new BinaryTree(n1);
+            tree1.Head.Left = n2;
+            tree1.Head.Right = n3;
+            tree1.Head.Left.Right = n4;
+
+            BinaryTree tree2 = new BinaryTree(n5);
+            tree2.Head.Left = n6;
+            tree2.Head.Right = n7;
+            tree2.Head.Right.Left = n8;
+
+            List<string> expected = new List<string> { "2000JD", "15000JD" };
+
+            //Assert
+            Assert.Equal(expected, Program.TreeIntersection(tree1, tree2));
+        }
+
+        [Fact]
+        public void CanDetectAllAsIntersections()
+        {
+            //Arrange
+
+            Node n1 = new Node("Yahia", "1000JD");
+            Node n2 = new Node("Ahmad", "15000JD");
+            Node n3 = new Node("Njood", "2000JD");
+            Node n4 = new Node("Mahmoud", "500JD");
+            Node n5 = new Node("Omar", "444000JD");
+
+            Node n6 = new Node("Yahia", "2000JD");
+            Node n7 = new Node("Ahmad", "15000JD");
+            Node n8 = new Node("Njood", "500JD");
+
+            BinaryTree tree1 = new BinaryTree(n1);
+            tree1.Head.Left = n2;
+            tree1.Head.Right = n3;
+            tree1.Head.Left.Right = n4;
+
+            BinaryTree tree2 = new BinaryTree(n5);
+            tree2.Head.Left = n6;
+            tree2.Head.Right = n7;
+            tree2.Head.Right.Left = n8;
+
+            List<string> expected = new List<string> { "2000JD","15000JD","500JD"};
+
+            //Assert
+            Assert.Equal(expected, Program.TreeIntersection(tree1, tree2));
+        }
+
+        [Fact]
+        public void CanDetectNoIntersections()
+        {
+            //Arrange
+
+            Node n1 = new Node("Yahia", "1000JD");
+            Node n2 = new Node("Ahmad", "150500JD");
+            Node n3 = new Node("Njood", "20200JD");
+            Node n4 = new Node("Mahmoud", "5000JD");
+            Node n5 = new Node("Omar", "444000JD");
+
+            Node n6 = new Node("Yahia", "2000JD");
+            Node n7 = new Node("Ahmad", "15000JD");
+            Node n8 = new Node("Njood", "500JD");
+
+            BinaryTree tree1 = new BinaryTree(n1);
+            tree1.Head.Left = n2;
+            tree1.Head.Right = n3;
+            tree1.Head.Left.Right = n4;
+
+            BinaryTree tree2 = new BinaryTree(n5);
+            tree2.Head.Left = n6;
+            tree2.Head.Right = n7;
+            tree2.Head.Right.Left = n8;
+
+            List<string> expected = new List<string>();
+
+            //Assert
+            Assert.Equal(expected, Program.TreeIntersection(tree1, tree2));
+        }
     }
 }

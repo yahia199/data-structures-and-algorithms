@@ -33,3 +33,5 @@
 [Repeated Word](./Hash%20Table/repeated%20word.md)
 
 [LEFT JOIN](./Hash%20Table/hashmap-left-join.md)
+
+[Tree Intersectin](./Hash%20Table/Tree-Intersection.md)
