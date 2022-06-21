@@ -109,5 +109,30 @@ namespace GraphTest
 
             Assert.Null(result);
         }
+        [Fact]
+        public void CanReturnSelfPointingEdge()
+        {
+            Graph graph = new Graph();
+            graph.AddNode("A");
+            Vertex A = new Vertex("A");
+            graph.AddEdge(A, A, 1);
+
+            List<Vertex> result = graph.BreadthFirst(A);
+
+            Assert.Equal("A", result[0].Edge[0].Neighbor.Value);
+        }
+
+        [Fact]
+        public void CanReturnEdgelessNode()
+        {
+            Graph graph = new Graph();
+            graph.AddNode("Edgeless");
+            Vertex edgelessNode = new Vertex("Edgeless");
+
+            List<Vertex> result = graph.BreadthFirst(edgelessNode);
+
+            Assert.Equal("Edgeless", result[0].Value);
+        }
+
     }
 }
