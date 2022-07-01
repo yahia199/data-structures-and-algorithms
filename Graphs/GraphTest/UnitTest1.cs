@@ -133,6 +133,33 @@ namespace GraphTest
 
             Assert.Equal("Edgeless", result[0].Value);
         }
+        [Fact]
+        public void BusinessTriptest()
+        {
+            Graph graph = new Graph();
+            graph.AddNode("Amman");
+            graph.AddNode("Zarqa");
+            graph.AddNode("Irbid");
+            graph.AddNode("Jarash");
+            graph.AddNode("Salt");
+            Vertex A = new Vertex("Amman");
+            Vertex B = new Vertex("Zarqa");
+            Vertex C = new Vertex("Irbid");
+            Vertex D = new Vertex("Jarash");
+            Vertex E = new Vertex("Salt");
+            graph.AddEdge(A, B, 50);
+            graph.AddEdge(A, C, 32);
+            graph.AddEdge(B, C, 110);
+            graph.AddEdge(C, D, 99);
+            graph.AddEdge(C, E, 159);
+            graph.AddEdge(D, E, 75);
+            string[] citynames = { "Amman", "Zarqa", "Irbid" };
+            var result = Graph.BusinessTrip(graph, citynames);
+            var expected = 160;
+
+            Assert.Equal(expected, result);
+        }
+
 
     }
 }

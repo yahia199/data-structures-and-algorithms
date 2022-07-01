@@ -85,5 +85,28 @@ namespace Graphs.Classes
 
             return nodePath;
         }
+        public static int? BusinessTrip(Graph graph, string[] cityNames)
+        {
+            int Cost = 0;
+            if (cityNames.Length <= 1)
+            {
+                return null;
+            }
+            for (int i = 0; i < cityNames.Length - 1; i++)
+            {
+                List<Edge> Edges = graph.GetNeighbors(new Vertex(cityNames[i]));
+
+                if (!Edges.Exists(n => n.Neighbor.Value.ToString() == cityNames[i + 1]))
+                {
+                    return null;
+                }
+                else
+                {
+                    Cost += Edges.Find(n => n.Neighbor.Value.ToString() == cityNames[i + 1]).Weight;
+                }
+            }
+            return Cost;
+        }
+
     }
 }
