@@ -41,3 +41,5 @@
 [breadth-first traversal](./Graphs/graph-breadth-first.md)
 
 [graph-business-trip](./Graphs/graph-business-trip.md)
+
+[graph-depth-first](./Graphs/graph-depth-first.md)
